@@ -13,6 +13,7 @@ Patch1:		%{name}-configure_in.patch
 Patch2:		%{name}-Makefile.patch
 Patch3:		%{name}-desktop.patch
 Patch4:		%{name}-configure.patch
+Patch5:		%{name}-gtk24.patch
 URL:		http://www.krasu.ru/soft/chuchelo/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -63,14 +64,14 @@ pomoc± protoko³ów FTP lub HTTP. Mo¿liwo¶ci:
 
 %prep
 %setup -q -n %{name}-%{version}%{beta}
-%patch0
+%patch0 -p0
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__gettextize}
 %{__aclocal} -I admin -I m4
