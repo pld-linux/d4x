@@ -1,9 +1,33 @@
-diff -urN d4x-2.4.1.orig/share/nt.desktop d4x-2.4.1/share/nt.desktop
---- d4x-2.4.1.orig/share/nt.desktop	Tue Jan 28 01:31:32 2003
-+++ d4x-2.4.1/share/nt.desktop	Tue Jan 28 01:33:10 2003
-@@ -16,3 +16,5 @@
+--- d4x-2.5.0rc2/share/nt.desktop~	Wed Jul 28 00:01:20 2004
++++ d4x-2.5.0rc2/share/nt.desktop	Wed Jul 28 00:01:20 2004
+@@ -1,18 +1,21 @@
+ [Desktop Entry]
+ Name=Downloader for X
+-Name[ru]=Î¡ﬁ¡ÃÀ¡ ƒÃ— ÈÀ”œ◊
+-Name[fr]=Downloader for X
++Name[de]=Downloader f√ºr X
+ Name[es]=Downloader para X
+-Name[de]=Downloader f¸r X
++Name[fr]=Downloader for X
+ Name[pl]=Downloader dla X
+-Comment=downloading program
+-Comment[ru]=–“œ«“¡ÕÕ¡ ƒÃ— ”À¡ﬁ…◊¡Œ…— ∆¡ Ãœ◊
+-Comment[fr]=Programme de tÈlÈchargement de fichiers
+-Comment[es]=Una herramienta para descagar ficheros
++Name[ru]=–ö–∞—á–∞–ª–∫–∞ –¥–ª—è –ò–∫—Å–æ–≤
++Comment=Downloading program
+ Comment[de]=Programm zum Downloaden von Dateien
+-Comment[pl]=Program do pobierania plikÛw z Internetu.
++Comment[es]=Una herramienta para descagar ficheros
++Comment[fr]=Programme de t√©l√©chargement de fichiers
++Comment[pl]=Program do pobierania plik√≥w z Internetu
++Comment[ru]=–ø—Ä–æ–≥—Ä–∞–º–º–∞ –¥–ª—è —Å–∫–∞—á–∏–≤–∞–Ω–∏—è —Ñ–∞–π–ª–æ–≤
+ TryExec=nt
+ Exec=nt
  Icon=nt.png
- Terminal=false
+-Terminal=0
++Terminal=false
  Type=Application
-+Categories=Application;Network;
++Categories=GTK;Network;FileTransfer;
 +Encoding=UTF-8
++# vi: encoding=utf-8
