@@ -21,6 +21,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 Obsoletes:	nt
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +45,7 @@ or HTTP protocol. Main features:
 
 %description -l pl
 Program pozwalaj±cy na pobieranie plików z internetu/intranetu za
-pomoc± protoko³ów FTP lub HTTP Mo¿liwo¶ci:
+pomoc± protoko³ów FTP lub HTTP. Mo¿liwo¶ci:
     - wielow±tkowa budowa
     - przyjazny interfejs u¿ytkownika
     - automatyczne wznawianie po przerwaniu po³±czenia
