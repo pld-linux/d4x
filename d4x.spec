@@ -1,4 +1,4 @@
-%define beta rc2
+%define		beta	rc2
 Summary:	Downloader for X - ftp/http download manager for X window system
 Summary(pl):	Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
@@ -29,38 +29,38 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This program lets you download files from internet/intranet using FTP
 or HTTP protocol. Main features:
-    - multithreaded design
-    - convenient user-friendly interface
-    - automatic resuming after connection breaks
-    - multiple simultaneous downloads
-    - recursive FTP and HTTP downloading
-    - ability to change links in HTML file for offline browsing
-    - wildcards support for FTP recursing
-    - filters support for HTTP recursing
-    - proxy support (FTP and HTTP)
-    - supports for traffic limitation
-    - mass downloading function
-    - FTP search
-    - build-in scheduler
-    - and many many other...
+- multithreaded design
+- convenient user-friendly interface
+- automatic resuming after connection breaks
+- multiple simultaneous downloads
+- recursive FTP and HTTP downloading
+- ability to change links in HTML file for offline browsing
+- wildcards support for FTP recursing
+- filters support for HTTP recursing
+- proxy support (FTP and HTTP)
+- supports for traffic limitation
+- mass downloading function
+- FTP search
+- build-in scheduler
+- and many many other...
 
 %description -l pl
 Program pozwalaj±cy na pobieranie plików z internetu/intranetu za
 pomoc± protoko³ów FTP lub HTTP. Mo¿liwo¶ci:
-    - wielow±tkowa budowa
-    - przyjazny interfejs u¿ytkownika
-    - automatyczne wznawianie po przerwaniu po³±czenia
-    - jednoczesne pobieranie kilku plików
-    - rekursywne pobieranie
-    - mo¿liwo¶æ zmiany odno¶ników w plikach HTML do przegl±dania offline
-    - mo¿liwo¶æ stosowania znaków wieloznacznych dla FTP
-    - mo¿liwo¶æ stosowania filtrów dla HTTP
-    - obs³uga proxy
-    - obs³uga ograniczenia ruchu
-    - funkcja zmasowanego pobierania
-    - wyszukiwanie FTP
-    - wbudowany harmonogram
-    - i wiele innych...
+- wielow±tkowa budowa
+- przyjazny interfejs u¿ytkownika
+- automatyczne wznawianie po przerwaniu po³±czenia
+- jednoczesne pobieranie kilku plików
+- rekursywne pobieranie
+- mo¿liwo¶æ zmiany odno¶ników w plikach HTML do przegl±dania offline
+- mo¿liwo¶æ stosowania znaków wieloznacznych dla FTP
+- mo¿liwo¶æ stosowania filtrów dla HTTP
+- obs³uga proxy
+- obs³uga ograniczenia ruchu
+- funkcja zmasowanego pobierania
+- wyszukiwanie FTP
+- wbudowany harmonogram
+- i wiele innych...
 
 %prep
 %setup -q -n %{name}-%{version}%{beta}
