@@ -7,6 +7,7 @@ Release:	1
 License:	Artistic
 Group:		X11/Applications/Networking
 Source0:	http://www.krasu.ru/soft/chuchelo/files/%{name}-%{version}.tar.gz
+# Source0-md5:	9ff1521a6c7ecedb6d71f1e1a6a6696a
 Patch0:		%{name}-elif_fix.patch
 Patch1:		%{name}-destdir.patch
 Patch2:		%{name}-configure_in.patch
