@@ -1,4 +1,3 @@
-
 Summary:	Downloader for X - ftp/http download manager for X window system
 Summary(pl):	Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
@@ -23,7 +22,6 @@ BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
 Obsoletes:	nt
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 This program lets you download files from internet/intranet using FTP
@@ -82,11 +80,12 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_datadir}/applications,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install share/nt.desktop $RPM_BUILD_ROOT%{_datadir}/applications
+install share/nt.desktop $RPM_BUILD_ROOT%{_desktopdir}
 install share/{*.xpm,*.png} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 mv -f DOC/FAQ.gr DOC/FAQ.el
@@ -110,9 +109,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %attr(755,root,root) %{_bindir}/nt
 %attr(755,root,root) %{_bindir}/d4x
-%{_mandir}/man1/*
-%{_datadir}/applications/nt.desktop
-%{_pixmapsdir}/*
-%{_datadir}/d4x/sounds/*
-%{_datadir}/d4x/themes/*
+%dir %{_datadir}/d4x
+%{_datadir}/d4x/sounds
+%{_datadir}/d4x/themes
 %{_datadir}/d4x/ftpsearch.xml
+%{_mandir}/man1/*
+%{_desktopdir}/nt.desktop
+%{_pixmapsdir}/*
