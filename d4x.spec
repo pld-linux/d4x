@@ -1,17 +1,18 @@
+%define beta beta2
 Summary:	Downloader for X - ftp/http download manager for X window system
 Summary(pl):	Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
-Version:	2.4.1
-Release:	1
+Version:	2.5.0
+Release:	0.%{beta}.1
 License:	Artistic
 Group:		X11/Applications/Networking
-Source0:	http://www.krasu.ru/soft/chuchelo/files/%{name}-%{version}.tar.gz
-# Source0-md5:	9ff1521a6c7ecedb6d71f1e1a6a6696a
+Source0:	http://www.krasu.ru/soft/chuchelo/files/%{name}-%{version}%{beta}.tar.gz
+# Source0-md5:	3fa993748fee4e0066e09bb5ac2a12e3
 Patch0:		%{name}-elif_fix.patch
-Patch1:		%{name}-destdir.patch
-Patch2:		%{name}-configure_in.patch
-Patch3:		%{name}-Makefile.patch
-Patch4:		%{name}-desktop.patch
+Patch1:		%{name}-configure_in.patch
+Patch2:		%{name}-Makefile.patch
+Patch3:		%{name}-desktop.patch
+Patch4:		%{name}-configure.patch
 URL:		http://www.krasu.ru/soft/chuchelo/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -60,7 +61,7 @@ pomoc± protoko³ów FTP lub HTTP Mo¿liwo¶ci:
     - i wiele innych...
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}%{beta}
 %patch0
 %patch1 -p1
 %patch2 -p1
@@ -71,7 +72,7 @@ pomoc± protoko³ów FTP lub HTTP Mo¿liwo¶ci:
 rm -f missing
 %{__libtoolize}
 %{__gettextize}
-%{__aclocal} -I admin
+%{__aclocal} -I admin -I m4
 %{__autoconf}
 %{__automake}
 %configure
