@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This program lets you download files from internet/intranet using FTP
 or HTTP protocol. Main features:
     - multithreaded design
-    - convient user-friendly interface
+    - convenient user-friendly interface
     - automatic resuming after connection breaks
     - multiple simultaneous downloads
     - recursive FTP and HTTP downloading
