@@ -20,6 +20,7 @@ BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
+Obsoletes:	nt
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
