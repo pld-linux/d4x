@@ -3,7 +3,7 @@ Summary:	Downloader for X - ftp/http download manager for X window system
 Summary(pl):	Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
 Version:	2.5.0
-Release:	0.%{beta}.2
+Release:	0.%{beta}.3
 License:	Artistic
 Group:		X11/Applications/Networking
 Source0:	http://www.krasu.ru/soft/chuchelo/files/%{name}-%{version}%{beta}.tar.gz
