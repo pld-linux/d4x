@@ -1,0 +1,34 @@
+--- d4x-2.5.0rc2/main/face/lmenu.cc.orig	Wed Dec 24 17:24:51 2003
++++ d4x-2.5.0rc2/main/face/lmenu.cc	Fri Mar 26 15:15:15 2004
+@@ -221,8 +221,8 @@
+ 			    GtkAccelFlags(0),
+ 			    GTK_OBJECT(ListMenuArray[LM_EDIT_COMMON]),
+ 			    "activate");
+-*/
+ 	_gtk_accel_group_attach(accel_group,G_OBJECT(MainWindow));
++*/
+ 
+ 	gtk_widget_show_all(ListMenu);
+ };
+--- d4x-2.5.0rc2/main/face/list.cc.orig	Mon Jan  5 05:59:46 2004
++++ d4x-2.5.0rc2/main/face/list.cc	Fri Mar 26 15:15:40 2004
+@@ -508,7 +508,7 @@
+ 	gtk_item_factory_create_items(main_menu_item_factory, nmenu_items, menu_items, NULL);
+ 	init_load_accelerators();
+ 	MainMenu= gtk_item_factory_get_widget(main_menu_item_factory, "<main>");
+-	_gtk_accel_group_attach(accel_group,G_OBJECT(MainWindow));
++//	_gtk_accel_group_attach(accel_group,G_OBJECT(MainWindow));
+ 	g_signal_connect(G_OBJECT (MainMenu),
+ 			   "button_press_event",
+ 			   G_CALLBACK (main_menu_prepare),
+--- d4x-2.5.0rc2/configure.in.orig	Fri Mar 26 15:02:57 2004
++++ d4x-2.5.0rc2/configure.in	Fri Mar 26 15:15:59 2004
+@@ -273,7 +273,7 @@
+ 
+ # Other needed defines
+ AC_DEFINE(_REENTRANT, , [Enable reenrant code of glibc])
+-AC_DEFINE(GTK_DISABLE_DEPRECATED, , [Enable warnings about deprecated functions usage])
++dnl AC_DEFINE(GTK_DISABLE_DEPRECATED, , [Enable warnings about deprecated functions usage])
+ 
+ # Prepare all requiered flags
+ CXXFLAGS="$CXXFLAGS $OS_CXXFLAGS"
