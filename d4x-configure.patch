@@ -1,0 +1,20 @@
+diff -urN aaa/d4x-2.5.0beta2/configure.in d4x-2.5.0beta2/configure.in
+--- aaa/d4x-2.5.0beta2/configure.in	2003-06-22 22:57:14.000000000 +0200
++++ d4x-2.5.0beta2/configure.in	2003-07-11 13:14:38.000000000 +0200
+@@ -8,14 +8,14 @@
+ # Initialize environment
+ # -----------------------------------------------------------------------------
+ AC_INIT([d4x],
+-        esyscmd([. VERSION && echo -n ${MAJOR}.${MINOR}.${PATCH_LEVEL}${EXTRA_VERSION}]),
++        esyscmd([. ./VERSION && echo -n ${MAJOR}.${MINOR}.${PATCH_LEVEL}${EXTRA_VERSION}]),
+         [chuchelo@krasu.ru])
+ 
+ 
+ cat << EOF
+ ------------------------------------------------------------------------------
+ 
+-                  D4X -- Web Downloader for X (`. VERSION && echo -n ${MAJOR}.${MINOR}.${PATCH_LEVEL}${EXTRA_VERSION}`)
++                  D4X -- Web Downloader for X (`. ./VERSION && echo -n ${MAJOR}.${MINOR}.${PATCH_LEVEL}${EXTRA_VERSION}`)
+ 
+ ------------------------------------------------------------------------------
+ EOF
