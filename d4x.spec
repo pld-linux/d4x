@@ -23,6 +23,7 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 Obsoletes:	nt
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
