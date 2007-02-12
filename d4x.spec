@@ -1,6 +1,6 @@
 %define		beta	rc2
 Summary:	Downloader for X - ftp/http download manager for X window system
-Summary(pl.UTF-8):   Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
+Summary(pl.UTF-8):	Program do pobierania plików poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
 Version:	2.5.0
 Release:	0.%{beta}.3
