@@ -1,6 +1,6 @@
 %define		beta	rc2
 Summary:	Downloader for X - ftp/http download manager for X window system
-Summary(pl):	Program do pobierania plikÛw poprzez ftp/http dla X, czyli Downloader for X
+Summary(pl.UTF-8):   Program do pobierania plik√≥w poprzez ftp/http dla X, czyli Downloader for X
 Name:		d4x
 Version:	2.5.0
 Release:	0.%{beta}.3
@@ -45,19 +45,19 @@ or HTTP protocol. Main features:
 - build-in scheduler
 - and many many other...
 
-%description -l pl
-Program pozwalaj±cy na pobieranie plikÛw z internetu/intranetu za
-pomoc± protoko≥Ûw FTP lub HTTP. Moøliwo∂ci:
-- wielow±tkowa budowa
-- przyjazny interfejs uøytkownika
-- automatyczne wznawianie po przerwaniu po≥±czenia
-- jednoczesne pobieranie kilku plikÛw
+%description -l pl.UTF-8
+Program pozwalajƒÖcy na pobieranie plik√≥w z internetu/intranetu za
+pomocƒÖ protoko≈Ç√≥w FTP lub HTTP. Mo≈ºliwo≈õci:
+- wielowƒÖtkowa budowa
+- przyjazny interfejs u≈ºytkownika
+- automatyczne wznawianie po przerwaniu po≈ÇƒÖczenia
+- jednoczesne pobieranie kilku plik√≥w
 - rekursywne pobieranie
-- moøliwo∂Ê zmiany odno∂nikÛw w plikach HTML do przegl±dania offline
-- moøliwo∂Ê stosowania znakÛw wieloznacznych dla FTP
-- moøliwo∂Ê stosowania filtrÛw dla HTTP
-- obs≥uga proxy
-- obs≥uga ograniczenia ruchu
+- mo≈ºliwo≈õƒá zmiany odno≈õnik√≥w w plikach HTML do przeglƒÖdania offline
+- mo≈ºliwo≈õƒá stosowania znak√≥w wieloznacznych dla FTP
+- mo≈ºliwo≈õƒá stosowania filtr√≥w dla HTTP
+- obs≈Çuga proxy
+- obs≈Çuga ograniczenia ruchu
 - funkcja zmasowanego pobierania
 - wyszukiwanie FTP
 - wbudowany harmonogram
