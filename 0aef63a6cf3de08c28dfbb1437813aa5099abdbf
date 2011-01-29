@@ -1,0 +1,3 @@
+- buildrequires esound-devel, autoconf, automake
+- updated build, install, files
+- release 1, STBR
