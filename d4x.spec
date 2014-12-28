@@ -18,7 +18,7 @@ URL:		http://www.krasu.ru/soft/chuchelo/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	esound-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	libao-devel
 BuildRequires:	libstdc++-devel
